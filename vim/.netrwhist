@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/swilso11/Dropbox'
+let g:netrw_dirhist_2='/tftpboot/pxelinux.cfg'
+let g:netrw_dirhist_3='/home/swilso11/lcfg/see_computers'
+let g:netrw_dirhist_4='/Volumes/repo/pkgsinfo/apps/keka'
+let g:netrw_dirhist_5='/Users/swilso11/.vim'
