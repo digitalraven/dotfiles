@@ -52,7 +52,7 @@ alias ffs='sudo '
 alias rdesktop='rdesktop -g 94% -PKD'
 export EDITOR=vim
 export VISUAL="/usr/local/bin/mate -w"
-export PATH="/bin:/sbin:/usr/local/bin:/usr/local/etc:/usr/local/share/etc:/usr/etc:$PATH:$HOME/bin/$ARCHOS:$HOME/bin/share:/usr/local/bin:/usr/local/share/bin:/usr/local/pack/X11/bin:/usr/local/bin/X11:/usr/dt/bin:$OPENWINHOME/bin:/home/forte_6/SUNWspro/bin:/usr/ccs/bin:/bin:/usr/bin:/usr/hosts:/usr/ucb:/usr/NX/bin":/usr/sbin
+export PATH="/bin:/sbin:/usr/local/bin:/usr/local/etc:/usr/bin:/usr/local/share/etc:/usr/etc:$PATH:$HOME/bin/$ARCHOS:$HOME/bin/share:/usr/local/bin:/usr/local/share/bin:/usr/local/pack/X11/bin:/usr/local/bin/X11:/usr/dt/bin:$OPENWINHOME/bin:/home/forte_6/SUNWspro/bin:/usr/ccs/bin:/bin:/usr/bin:/usr/hosts:/usr/ucb:/usr/NX/bin":/usr/sbin
 
 
 # Add an "alert" alias for long running commands.  Use like so:
