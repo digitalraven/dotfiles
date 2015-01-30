@@ -39,16 +39,18 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+else
+    alias ls="ls -G"
 fi
 
 # some more ls aliases
 alias vi='vim'
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias la='ls -A'
-alias lr='ls -lrt'
+alias lr='ls -lhrt'
 alias l='ls -CF'
 alias dwim='sudo'
-alias ffs='sudo '
+alias ffs='sudo $!'
 alias rdesktop='rdesktop -g 94% -PKD'
 export EDITOR=vim
 export VISUAL="/usr/local/bin/mate -w"
