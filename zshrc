@@ -76,7 +76,7 @@ alias lr="ls -lhrt"
 alias ffs='sudo $(fc -ln -1)'
 alias rdesktop="rdesktop -g 94% -PKD"
 export EDITOR=vim
-export VISUAL="/usr/local/bin/mate -w"
+export VISUAL=vim
 export LD_LIBRARY_PATH=/usr/local/lib:
 export ONE_AUTH=/var/lib/.one/one_auth
 setopt hist_ignore_all_dups

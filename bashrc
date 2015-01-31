@@ -23,11 +23,22 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-PS1="\u@\h:\w\\$ "
+export PROMPT_COMMAND=__prompt_command
 
-if [[ $UID -eq 0 ]]; then
-  PS1='\[\033[1;31m\]\u@\h:\w\$\[\033[0m\] '
-fi
+function __prompt_command() {
+  local EXIT="$?"
+  PS1=""
+  if [[ $UID -eq 0 ]]; then
+    PS1+='⚡️  '
+  fi
+  if [ $EXIT != 0 ]; then
+    PS1+='\[\033[1;31m\]✘ \[\033[0m\]'
+  else
+    PS1+='\[\033[0;36m\]✔ \[\033[0m\]'
+  fi
+
+  PS1+="\u@\h:\w\\$ "
+}
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -50,7 +61,7 @@ alias la='ls -A'
 alias lr='ls -lhrt'
 alias l='ls -CF'
 alias dwim='sudo'
-alias ffs='sudo $!'
+alias ffs='sudo $(history -p \!\!)'
 alias rdesktop='rdesktop -g 94% -PKD'
 export EDITOR=vim
 export VISUAL="/usr/local/bin/mate -w"
