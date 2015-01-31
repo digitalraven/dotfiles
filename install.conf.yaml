@@ -4,4 +4,6 @@
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
+    ~/.zshrc: zshrc
+    ~/.oh-my-zsh: zsh
 - shell: []
