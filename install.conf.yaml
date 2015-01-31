@@ -6,4 +6,5 @@
     ~/.bash_profile: bash_profile
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: zsh
+    ./zsh/themes/digitalraven.zsh-theme: digitalraven.zsh-theme
 - shell: []
