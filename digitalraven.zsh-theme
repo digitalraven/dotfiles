@@ -15,6 +15,9 @@ myprompt() {
   if [[ $UID -eq 0 ]]; then
     # Add lightning bolt and red username
     PS1+="⚡️ %{$fg_bold[red]%}"
+  elif [[ "$(id -un)" != "$(basename $HOME)" ]]; then
+    # Add yellow username
+    PS1+="✨ %{$fg_bold[magenta]%}"
   fi
 
   PS1+="%n%{$reset_color%}@"
