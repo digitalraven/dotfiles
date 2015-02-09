@@ -67,7 +67,7 @@ alias l='ls -CF'
 alias dwim='sudo'
 alias ffs='sudo $(history -p \!\!)'
 alias rdesktop='rdesktop -g 94% -PKD'
-if [[ -f 'usr/local/share/etc/dir' ]]; then
+if [[ -f '/usr/local/share/etc/dir' ]]; then
   alias dir='/usr/local/share/etc/dir'
 fi
 export EDITOR=vim

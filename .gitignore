@@ -6,4 +6,5 @@
 ehthumbs.db
 Thumbs.db
 vim/undo
+vim/.netrwhist
 *.swp
