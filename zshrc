@@ -69,6 +69,10 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+if [[ -f '/usr/local/share/etc/dir' ]]; then
+  alias dir="/usr/local/share/etc/dir"
+fi
+
 alias ls="ls -G"
 alias ll="ls -AlhF"
 alias la="ls -A"
