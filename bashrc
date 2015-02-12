@@ -66,7 +66,7 @@ alias lr='ls -lhrt'
 alias l='ls -CF'
 alias dwim='sudo'
 alias ffs='sudo $(history -p \!\!)'
-alias rdesktop='rdesktop -g 94% -PKD'
+alias rdesktop='rdesktop -u swilso11 -p - -g 1440x900 -PK'
 if [[ -f '/usr/local/share/etc/dir' ]]; then
   alias dir='/usr/local/share/etc/dir'
 fi
