@@ -16,7 +16,7 @@ myprompt() {
     # Add lightning bolt and red username
     PS1+="⚡️ %{$fg_bold[red]%}"
   elif [[ "$(id -un)" != "$(basename $HOME)" ]]; then
-    # Add yellow username
+    # Add colored username
     PS1+="✨ %{$fg_bold[magenta]%}"
   fi
 
@@ -28,5 +28,11 @@ myprompt() {
     PS1+="%m"
   fi
 
-  PS1+=":%~%(!.#.$) "
+  PS1+=":%~"
+
+  if [[ -n "$VIRTUAL_ENV" ]]; then
+    PS1+="%{$fg_bold[magenta]%}✨ `basename \"$VIRTUAL_ENV\"`✨ %{$reset_color%}"
+  fi
+
+  PS1+="%(!.#.$) "
 }
