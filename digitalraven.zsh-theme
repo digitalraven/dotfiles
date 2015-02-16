@@ -32,7 +32,8 @@ myprompt() {
 
   if [[ -n "$VIRTUAL_ENV" ]]; then
     RPROMPT="%{$fg_bold[magenta]%}✨ `basename \"$VIRTUAL_ENV\"`✨ %{$reset_color%}"
+    PS1+="%{$fg_bold[magenta]%}"
   fi
 
-  PS1+="%(!.#.$) "
+  PS1+="%(!.#.$)%{$reset_color%} "
 }
