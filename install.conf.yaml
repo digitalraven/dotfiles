@@ -6,5 +6,10 @@
     ~/.bash_profile: bash_profile
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: zsh
-    ./zsh/custom/themes/digitalraven.zsh-theme: digitalraven.zsh-theme
+    ./zsh/custom/themes/digitalraven.zsh-theme: 
+      create: true
+      path: digitalraven.zsh-theme
+    ~/bin/inve:
+      create: true
+      path: inve
 - shell: []
