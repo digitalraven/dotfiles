@@ -80,7 +80,7 @@ fi
 alias ls="ls -G"
 alias ll="ls -AlhF"
 alias la="ls -A"
-alias lr="ls -lhrt"
+alias lr="ls -lAhrt"
 alias ffs='sudo $(fc -ln -1)'
 alias rdesktop="rdesktop -g 94% -PKD"
 alias vi='vim'

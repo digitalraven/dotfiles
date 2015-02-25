@@ -168,9 +168,10 @@ nmap ;e :NERDTreeToggle<CR>
 nmap ;t :TagbarToggle<CR>
 nmap ;r :TagbarOpen j<CR>
 cmap w!! w !sudo tee > /dev/null %
+nmap ;t :set ts=4 sts=4 noet<CR>:retab!<CR>:set ts=2 sts=2 sw=2 et<CR>:retab<CR>
 " Map C-c and C-v to interact with the system clipboard on OS X.
-"vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
-"nmap <C-v> :call setreg("\"",system("pbpaste"))<CR>p
+vmap <C-C> y:call system("pbcopy", getreg("\""))<CR>
+nmap <C-V> :call setreg("\"",system("pbpaste"))<CR>p
 
 " Split settings
 set splitbelow

@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/swilso11/Dropbox'
 let g:netrw_dirhist_2='/tftpboot/pxelinux.cfg'
 let g:netrw_dirhist_3='/home/swilso11/lcfg/see_computers'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Volumes/repo/pkgsinfo/apps/keka'
 let g:netrw_dirhist_5='/Users/swilso11/.vim'
 let g:netrw_dirhist_6='/Users/swilso11/git/dotfiles/zsh/plugins/git-extras'
 let g:netrw_dirhist_7='/Volumes/swilso11/monopoly/monopoly/monopoly/scripts'
+let g:netrw_dirhist_8='/Volumes/swilso11/monopoly/datafiles'
