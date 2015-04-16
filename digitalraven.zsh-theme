@@ -37,3 +37,11 @@ myprompt() {
 
   PS1+="%(!.#.$)%{$reset_color%} "
 }
+
+ssh() {
+  if [[ $@ == "vlx" ]]; then
+    command ssh -t vlx zsh
+  else
+    command ssh "$@"
+  fi
+}
