@@ -1,5 +1,6 @@
 - clean: ["~"]
 - link:
+    ~/.ssh/config: config
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc
