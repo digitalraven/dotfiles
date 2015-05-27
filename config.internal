@@ -1,0 +1,9 @@
+Host *
+User swilso11
+GSSAPIAuthentication yes
+ForwardX11 yes
+ForwardX11Trusted yes
+GSSAPIDelegateCredentials yes
+GSSAPIKeyExchange yes
+GSSAPIRenewalForcesRekey yes
+GSSAPITrustDNS no
