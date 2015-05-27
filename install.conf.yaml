@@ -1,6 +1,10 @@
 - clean: ["~"]
+- shell:
+  - 
+    - "ping -c 1 vlx >/dev/null 2>&1; if [[ $? != 0 ]]; then SSHC=config.external; else SSHC=config.internal; fi; ln -s ~/git/dotfiles/${SSHC} ~/.ssh/config"
+    - "Set appropriate SSH config"
 - link:
-    ~/.ssh/config: config
+    ~/.gitconfig: gitconfig
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc
