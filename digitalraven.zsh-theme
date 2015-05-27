@@ -40,7 +40,8 @@ myprompt() {
 
 ssh() {
   if [[ $@ == "vlx" ]]; then
-    command ssh -t vlx zsh
+    BOX=vlx0$[RANDOM %8 +1].see.ed.ac.uk
+    command ssh -t $BOX zsh
   else
     command ssh "$@"
   fi
