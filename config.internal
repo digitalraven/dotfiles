@@ -4,6 +4,6 @@ GSSAPIAuthentication yes
 ForwardX11 yes
 ForwardX11Trusted yes
 GSSAPIDelegateCredentials yes
-GSSAPIKeyExchange no
+GSSAPIKeyExchange yes
 GSSAPIRenewalForcesRekey yes
 GSSAPITrustDNS yes
