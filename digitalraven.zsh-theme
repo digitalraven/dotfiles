@@ -40,8 +40,6 @@ myprompt() {
 
 ssh() {
 
-  export DISPLAY=:0.0
-
   if [[ $@ == "vlx" ]]; then
     ping -c 1 vlx >/dev/null 2>&1
     if [[ $? != 0 ]]; then
