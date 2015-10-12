@@ -16,7 +16,7 @@ Host *.see.ed.ac.uk *.eng.ed.ac.uk !sshgate.see.ed.ac.uk !ssh.see.ed.ac.uk
   ForwardX11 yes
   ForwardX11Trusted yes
   GSSAPIDelegateCredentials yes
-  GSSAPIKeyExchange no
+  GSSAPIKeyExchange yes
   GSSAPIRenewalForcesRekey yes
   GSSAPITrustDNS no
   ProxyCommand ssh -KW %h:%p sshgate.see.ed.ac.uk
