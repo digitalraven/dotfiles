@@ -6,6 +6,12 @@ myprompt() {
   local EXIT="$?"
   PS1=""
 
+  if klist -s 2>/dev/null; then
+    PS1+=""
+  else
+    PS1+="%{$fg_bold[magenta]%}✨ KRB✨  %{$reset_color%}"
+  fi
+
   if [[ $EXIT != 0 ]]; then
     PS1+="%{$fg_bold[red]%}✘ "
   else
@@ -21,7 +27,7 @@ myprompt() {
   fi
 
   PS1+="%n%{$reset_color%}@"
-  
+
   if [[ -n "$SSH_CLIENT" ]]; then
     PS1+="%2m"
   else
