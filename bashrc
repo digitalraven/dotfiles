@@ -35,6 +35,12 @@ function __prompt_command() {
   if [[ $UID -eq 0 ]]; then
     PS1+='⚡️  '
   fi
+  if klist -s 2>/dev/null; then
+    PS1+=""
+  else
+    PS1+='✨ \[\033[1;31m\]KRB\[\033[0m\]✨ '
+  fi
+
   if [ $EXIT != 0 ]; then
     PS1+='\[\033[1;31m\]✘ \[\033[0m\]'
   else
