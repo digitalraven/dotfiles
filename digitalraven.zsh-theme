@@ -2,6 +2,18 @@
 
 precmd() { myprompt; }
 
+alert() {
+  if [[ ! -d /Applications/terminal-notifier.app ]]; then
+    echo "Terminal notifier not found"
+  fi
+
+  start=$(date +%s)
+  command $@
+  dur=$(echo "$(date +%s) - $start" | bc)
+
+  terminal-notifier -title "iTerm" -message "Command $@ took $dur seconds to run"
+}
+
 myprompt() {
   local EXIT="$?"
   PS1=""
@@ -54,6 +66,8 @@ ssh() {
       BOX=vlx
     fi
     command ssh -t $BOX zsh
+  elif [[ $@ == vlx* ]]; then
+    command ssh -t $@ zsh
   else
     command ssh "$@"
   fi
