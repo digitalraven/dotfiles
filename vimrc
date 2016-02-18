@@ -199,5 +199,7 @@ let g:tagbar_width = 70
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+autocmd BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum) foldmethod=expr
+autocmd BufWinLeave *.py setlocal foldexpr< foldmethod<
 
 "------------------------------------------------------------
