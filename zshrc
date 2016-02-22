@@ -95,3 +95,5 @@ export LD_LIBRARY_PATH=/usr/local/lib:
 export ONE_AUTH=/var/lib/.one/one_auth
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
