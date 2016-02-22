@@ -65,9 +65,9 @@ ssh() {
     else
       BOX=vlx
     fi
-    command ssh -t $BOX zsh
+    command ssh -t $BOX "zsh -l"
   elif [[ $@ == vlx* ]]; then
-    command ssh -t $@ zsh
+    command ssh -t $@ "zsh -l"
   else
     command ssh "$@"
   fi
