@@ -6,4 +6,4 @@ ForwardX11Trusted yes
 GSSAPIDelegateCredentials yes
 GSSAPIKeyExchange no
 GSSAPIRenewalForcesRekey yes
-GSSAPITrustDNS yes
+GSSAPITrustDNS no

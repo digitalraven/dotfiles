@@ -59,13 +59,7 @@ myprompt() {
 ssh() {
 
   if [[ $@ == "vlx" ]]; then
-    ping -c 1 vlx >/dev/null 2>&1
-    if [[ $? != 0 ]]; then
-      BOX=vlx0$[RANDOM %8 +1].see.ed.ac.uk
-    else
-      BOX=vlx
-    fi
-    command ssh -t $BOX "zsh -l"
+    command ssh -t vlx14.see.ed.ac.uk "zsh -l"
   elif [[ $@ == vlx* ]]; then
     command ssh -t $@ "zsh -l"
   else
