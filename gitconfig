@@ -14,3 +14,10 @@
 [http]
 	sslVerify = true
         sslCAinfo = /Users/swilso11/git/certs/ca-bundle.crt
+[advice]
+	statusHints = false
+	pushNonFastForward = false
+[color]
+	ui = auto
+[branch]
+	autosetupmerge = true

@@ -58,11 +58,5 @@ myprompt() {
 
 ssh() {
 
-  if [[ $@ == "vlx" ]]; then
-    command ssh -t vlx14.see.ed.ac.uk "zsh -l"
-  elif [[ $@ == vlx* ]]; then
-    command ssh -t $@ "zsh -l"
-  else
-    command ssh "$@"
-  fi
+  command ssh -t $@ "zsh -l"
 }

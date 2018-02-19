@@ -80,7 +80,7 @@ fi
 alias ls="ls -G"
 alias ll="ls -AlhF"
 alias la="ls -A"
-alias lr="ls -lAhrt"
+alias lr="ls -lFAhrt"
 alias ffs='sudo $(fc -ln -1)'
 alias rdesktop="rdesktop -g 94% -PKD"
 alias vi='vim'
@@ -89,6 +89,8 @@ alias emacs='vim'
 alias gcam='git commit -am'
 alias gsvl='git svn rebase'
 alias gsvp='git svn dcommit'
+alias qpd='perl -MMIME::QuotedPrint -pe '\''$_=MIME::QuotedPrint::decode($_);'\'
+alias ksume='/bin/ksu . -n $USER/eng.admin -l 3600 -e /bin/bash'
 export EDITOR=vim
 export VISUAL=vim
 export LD_LIBRARY_PATH=/usr/local/lib:
