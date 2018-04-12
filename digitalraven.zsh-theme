@@ -57,6 +57,11 @@ myprompt() {
 }
 
 ssh() {
-
   command ssh -t $@ "zsh -l"
+}
+
+bobrip() {
+  VLCCMD="/Applications/VLC.app/Contents/MacOS/VLC -I rc -v $1 --sout "#transcode{vcodec=none,acodec=mp3,ab=128,channels=2,samplerate=44100}:file{dst=$2}""
+  echo VLC Command: $VLCCMD
+  $VLCCMD
 }
