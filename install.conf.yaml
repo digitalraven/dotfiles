@@ -1,20 +1,27 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+    shell:
+        stderr: true
+
 - clean: ["~"]
+
 - shell:
-  - 
-    - "ping -c 1 vlx >/dev/null 2>&1; if [[ $? != 0 ]]; then SSHC=config.external; else SSHC=config.internal; fi; ln -s ~/git/dotfiles/${SSHC} ~/.ssh/config"
-    - "Set appropriate SSH config"
+    - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", Installing Homebrew]
+    - [brew bundle, Installing packages via homebrew]
+    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)", Installing oh-my-zsh]
+    - [git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting, Installing zsh syntax highlighting]
+    - [git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions, Installing zsh autosuggestions]
+
 - link:
     ~/.gitconfig: gitconfig
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.bashrc: bashrc
     ~/.bash_profile: bash_profile
-    ~/.zshrc: zshrc
-    ~/.oh-my-zsh: zsh
-    ./zsh/custom/themes/digitalraven.zsh-theme: 
-      create: true
-      path: digitalraven.zsh-theme
-    ~/bin/inve:
-      create: true
-      path: inve
-- shell: []
+    ~/.zshrc:
+        force: true
+        path: zshrc
+    ~/.oh-my-zsh/custom/themes/digitalraven.zsh-theme: 
+        path: digitalraven.zsh-theme

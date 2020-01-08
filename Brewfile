@@ -1,0 +1,25 @@
+brew 'git'
+brew 'git-flow'
+brew 'mas'
+brew 'openssl'
+brew 'python'
+brew 'python3'
+brew 'sqlite'
+brew 'youtube-dl'
+brew 'zsh'
+cask 'keka'
+cask 'iterm2'
+cask 'macdown'
+cask 'font-meslo-for-powerline'
+cask 'keybase'
+cask 'visual-studio-code'
+cask 'franz'
+cask 'paste'
+cask 'appcleaner'
+cask 'hyperdock'
+cask 'tiles'
+cask 'istat-menus'
+mas 'Tampermonkey', id: 1482490089
+mas 'AdGuard for Safari', id: 1440147260
+mas 'Microsoft Remote Desktop', id: 1295203466
+mas 'OneDrive', id: 823766827
