@@ -89,8 +89,9 @@ alias emacs='vim'
 alias gcam='git commit -am'
 alias gsvl='git svn rebase'
 alias gsvp='git svn dcommit'
-alias qpd='perl -MMIME::QuotedPrint -pe '\''$_=MIME::QuotedPrint::decode($_);'\'
 alias ksume='/bin/ksu . -n $USER/eng.admin -l 3600 -e /bin/bash'
+alias ldaped='ldapsearch -h authorise.is.ed.ac.uk -Z -x -b "dc=authorise,dc=ed,dc=ac,dc=uk"'
+
 export EDITOR=vim
 export VISUAL=vim
 export LD_LIBRARY_PATH=/usr/local/lib:

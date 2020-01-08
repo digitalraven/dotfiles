@@ -1,16 +1,3 @@
-" URL: http://vim.wikia.com/wiki/Example_vimrc
-" Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
-" Description: A minimal, but feature rich, example .vimrc. If you are a
-"              newbie, basing your first .vimrc on this file is a good choice.
-"              If you're a more advanced user, building your own .vimrc based
-"              on this file is still a good idea.
-
-"------------------------------------------------------------
-" Features {{{1
-"
-" These options and commands enable some very useful features in Vim, that
-" no user should have to live without.
-
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
@@ -138,8 +125,8 @@ set pastetoggle=<F11>
 
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 " Indentation settings for using hard tabs for indent. Display tabs as
@@ -164,9 +151,6 @@ nmap <C-e> :e#<CR>
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
 nmap ;p :CtrlPBuffer<CR>
-nmap ;e :NERDTreeToggle<CR>
-nmap ;t :TagbarToggle<CR>
-nmap ;r :TagbarOpen j<CR>
 cmap w!! w !sudo tee > /dev/null %
 nmap ;t :set ts=4 sts=4 noet<CR>:retab!<CR>:set ts=2 sts=2 sw=2 et<CR>:retab<CR>
 " Map C-c and C-v to interact with the system clipboard on OS X.
@@ -180,9 +164,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" NERDTree settings
-let g:NERDTreeWinSize = 70
-
 " CtrlP settings
 let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_match_window_bottom = 0
@@ -192,14 +173,8 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_switch_buffer = 0
 
-" Tagbar settings
-let g:tagbar_width = 70
-
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
-
-autocmd BufWinEnter *.py setlocal foldexpr=SimpylFold(v:lnum) foldmethod=expr
-autocmd BufWinLeave *.py setlocal foldexpr< foldmethod<
 
 "------------------------------------------------------------

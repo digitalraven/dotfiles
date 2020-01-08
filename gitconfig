@@ -11,9 +11,6 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[http]
-	sslVerify = true
-        sslCAinfo = /Users/swilso11/git/certs/ca-bundle.crt
 [advice]
 	statusHints = false
 	pushNonFastForward = false
