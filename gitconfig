@@ -18,3 +18,5 @@
 	ui = auto
 [branch]
 	autosetupmerge = true
+[credential]
+	helper = osxkeychain
