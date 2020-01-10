@@ -1,18 +1,13 @@
 - defaults:
     link:
-        create: true
-        relink: true
-    shell:
-        stderr: true
+      create: true
+      relink: true
 
 - clean: ["~"]
 
 - shell:
-    - [/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", Installing Homebrew]
-    - [brew bundle, Installing packages via homebrew]
-    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)", Installing oh-my-zsh]
-    - [git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting, Installing zsh syntax highlighting]
-    - [git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions, Installing zsh autosuggestions]
+    - brew bundle
+    - sh pre-install.sh
 
 - link:
     ~/.gitconfig: gitconfig
@@ -23,5 +18,5 @@
     ~/.zshrc:
         force: true
         path: zshrc
-    ~/.oh-my-zsh/custom/themes/digitalraven.zsh-theme: 
+    ~/.oh-my-zsh/custom/themes/digitalraven.zsh-theme:
         path: digitalraven.zsh-theme
