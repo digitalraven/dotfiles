@@ -3,7 +3,7 @@
 precmd() { myprompt; }
 
 alert() {
-  if [[ ! -d /Applications/terminal-notifier.app ]]; then
+  if [[ ! -e /usr/local/bin/terminal-notifier ]]; then
     echo "Terminal notifier not found"
   fi
 
@@ -11,7 +11,7 @@ alert() {
   command $@
   dur=$(echo "$(date +%s) - $start" | bc)
 
-  terminal-notifier -title "iTerm" -message "Command $@ took $dur seconds to run"
+  terminal-notifier -title "iTerm" -message "Finished: $1 took $dur seconds to run"
 }
 
 myprompt() {

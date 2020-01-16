@@ -9,6 +9,7 @@ brew 'python'
 brew 'python3'
 brew 'sqlite'
 # brew 'sudo-touchid' # needs tested on a touchid mac
+brew 'terminal-notifier'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
@@ -30,6 +31,7 @@ cask 'paste'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'visual-studio-code'
+cask 'vlc'
 mas '', id: 1295203466 # Microsoft Remote Desktop 10
 mas '', id: 1440147259 # AdGuard for Safari
 mas '', id: 1435957248 # Drafts 5
