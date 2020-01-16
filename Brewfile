@@ -32,3 +32,5 @@ mas '', id: 1295203466 # Microsoft Remote Desktop 10
 mas '', id: 1440147259 # AdGuard for Safari
 mas '', id: 1435957248 # Drafts 5
 mas '', id: 823766827  # OneDrive
+mas '', id: 1397180934 # Dark Mode for Safari
+mas '', id: 1482490089 # Tampermonkey for Safari
