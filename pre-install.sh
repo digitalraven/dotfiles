@@ -1,5 +1,5 @@
 echo 'Installing oh-my-zsh'
-/bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+/bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 mkdir -p ~/.oh-my-zsh/custom/themes
 mkdir -p ~/.oh-my-zsh/custom/plugins
 
