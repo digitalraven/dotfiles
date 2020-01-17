@@ -1,0 +1,43 @@
+default_view: os
+views:
+    os:
+        1:
+            text: Copy pwd 👉
+            command: pwd|tr -d "\\n" |pbcopy
+        2:
+            text: ll
+            command: ll
+        3:
+            text: lr
+            command: lr
+        4:
+            text: FFS
+            command: sudo $(fc -ln -1)
+        5:
+            text: vi 👈
+            command: vi $(pbpaste)
+        6:
+            text: 💫 Git Commands
+            view: git
+    git:
+        1:
+            text: Add 👈
+            command: ga $(pbpaste)
+        2:
+            text: Add all
+            command: gaa
+        3: 
+            text: Commit
+            command: gc
+        4:
+            text: Push
+            command: gp
+        5:
+            text: Pull
+            command: gl
+        6:
+            text: New branch 👈
+            command: git checkout -b $(pbpaste) && git push -u origin $(pbpaste)
+        7:
+            text: 💫 Path commands
+            view: os
