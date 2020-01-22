@@ -25,6 +25,7 @@ cask 'kaleidoscope'
 cask 'keepingyouawake'
 cask 'keka'
 cask 'keybase'
+cask 'lastpass'
 cask 'macdown'
 cask 'microsoft-office'
 # cask 'microsoft-remote-desktop-beta' # Better to use the MAS version if possible.
