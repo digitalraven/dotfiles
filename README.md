@@ -62,7 +62,7 @@ Finding where to purchase a licence and making that purchase is left as an exerc
 
 
 
-<a name="fn1">1</a>: One of my personal preferences includes getting a computer to do a lot of boring, repetitive tasks<sup>[2](#fn2)</sup> --- such as installing software and managing configuration files. If I had to try to remember which packages to install every time, each machine I use would be in a completely different state.
+<a name="fn1">1</a>: One of my personal preferences includes getting a computer to do a lot of boring, repetitive tasks<sup>[2](#fn2)</sup> --- such as installing software and managing configuration files. If I had to try to remember which packages to install every time, each machine I use would be in a completely different state.  
 <a name="fn2">2</a>: Configuration management is a topic close to my heart, but often I end up with machines that can't (for political rather than technological reasons) be enrolled in a proper CM environment. I will happily talk about the need for suitable CM for days at a time if given appropriate conversational lubricant (beer, gin, or whisky).
 
 [0]: https://github.com/anishathalye/dotbot
