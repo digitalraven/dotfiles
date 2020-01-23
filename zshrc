@@ -45,7 +45,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-autosuggestions zsh-apple-touchbar zsh-syntax-highlighting history-substring-search pip python colored-man-pages)
+plugins=(git osx zsh-autosuggestions zsh-apple-touchbar zsh-syntax-highlighting history-substring-search pip python colored-man-pages omz-homebrew)
 
 # User configuration
 
@@ -73,23 +73,21 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-if [[ -f '/usr/local/share/etc/dir' ]]; then
-  alias dir="/usr/local/share/etc/dir"
-fi
-
+# ls aliases. I use too many of these...
 alias ls="ls -G"
-alias ll="ls -AlhF"
-alias la="ls -A"
-alias lr="ls -lFAhrt"
-alias ffs='sudo $(fc -ln -1)'
-alias rdesktop="rdesktop -g 94% -PKD"
-alias vi='vim'
-alias kinit="kinit swilso11@EASE.ED.AC.UK"
-alias emacs='vim'
-alias gcam='git commit -am'
+alias ll="ls -AFhl"
+alias lr="ll -rt"
+
+# Additional git aliases
 alias gsvl='git svn rebase'
 alias gsvp='git svn dcommit'
-alias ksume='/bin/ksu . -n $USER/eng.admin -l 3600 -e /bin/bash'
+alias gdt='git difftool'
+
+# 'Regular' command aliases
+alias ffs='sudo $(fc -ln -1)'
+alias vi='vim'
+alias kinit="kinit --keychain swilso11@EASE.ED.AC.UK"
+alias emacs='vim'
 alias ldaped='ldapsearch -h authorise.is.ed.ac.uk -Z -x -b "dc=authorise,dc=ed,dc=ac,dc=uk"'
 
 export EDITOR=vim
