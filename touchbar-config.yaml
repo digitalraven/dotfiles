@@ -28,7 +28,7 @@ views:
             command: gaa
         3: 
             text: Commit
-            command: gcmsg $(vared -p "Commit message: " -c cmsg; echo $cmsg; unset $cmsg)
+            command: gcmsg $(vared -p 'Commit message? ' -c cmsg; echo $cmsg; unset $cmsg)
         4:
             text: Push
             command: gp
@@ -37,7 +37,7 @@ views:
             command: gl
         6:
             text: New branch 👈
-            command: git checkout -b $(vared -p "Commit message: " -c branch; echo $branch) && git push -u origin $branch && unset branch
+            command: git checkout -b $(vared -p 'Commit message? ' -c branch; echo $branch) && git push -u origin $branch && unset branch
         7:
             text: 💫 Path commands
             view: os
