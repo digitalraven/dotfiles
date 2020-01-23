@@ -22,7 +22,7 @@
 [credential]
 	helper = osxkeychain
 [core]
-	excludesfile = /Users/swilso11/.gitignore
+	excludesfile = ~/.gitignore
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
