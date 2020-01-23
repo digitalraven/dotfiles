@@ -9,6 +9,12 @@
     - brew bundle
     - sh pre-install.sh
 
+- pip:
+    file: packages.pip
+    binary: /usr/local/bin/pip3
+    stdout: false
+    stderr: true
+
 - link:
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore

@@ -1,0 +1,6 @@
+configparser
+pycodestyle
+pyflakes
+python-ldap
+setuptools
+xattr
