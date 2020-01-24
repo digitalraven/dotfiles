@@ -35,6 +35,7 @@ cask 'macdown'
 cask 'microsoft-office'
 # cask 'microsoft-remote-desktop-beta' # Better to use the MAS version if possible.
 cask 'paste'
+cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'qlstephen'
 cask 'scapple'
