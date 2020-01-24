@@ -10,11 +10,12 @@
 - shell:
     - brew bundle
     - sh pre-install.sh
+    - sh macos
 
 - pip:
     file: packages.pip
     binary: /usr/local/bin/pip3
-    stdout: false
+    stdout: true
     stderr: true
 
 - link:
