@@ -35,7 +35,7 @@ myprompt() {
   if klist -s 2>/dev/null; then
     PS1+=""
   else
-    PS1+="%{$fg_bold[magenta]%}✨ KRB✨  %{$reset_color%}"
+    PS1+="%{$fg_bold[magenta]%}✨KRB✨  %{$reset_color%}"
   fi
 
   # Indicate last command status with colour and a simple unicode indicator
