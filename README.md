@@ -21,7 +21,7 @@ The intent of this repo is to bring a new macOS account to a 'standard' state. I
 2. Clone this repo
 
     ```sh
-    git clone https://github.com/digitalraven/dotfiles
+    git clone --recurse-submodules https://github.com/digitalraven/dotfiles
     ```
 
 3. Sign in to the App Store; `mas` is flaky on Catalina, and doesn't work with command-line signin. Signing in via the app is a workaround that makes it kinda-work-ish. Sometimes.
