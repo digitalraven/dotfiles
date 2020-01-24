@@ -8,7 +8,6 @@ echo 'Installing zsh-apple-touchbar'
 git clone https://github.com/vegerot/zsh-apple-touchbar.git -b autoGenerate $ZSH_CUSTOM/plugins/zsh-apple-touchbar
 
 echo 'Fixing Quicklook plugins'
-xattr -dr com.apple.quarantine ~/Library/Quicklook/QLMarkdown.qlgenerator
-xattr -dr com.apple.quarantine ~/Library/Quicklook/QLStephen.qlgenerator
+xattr -d -r com.apple.quarantine ~/Library/Quicklook/*
 qlmanage -r
 
