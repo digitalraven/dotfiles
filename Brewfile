@@ -37,8 +37,8 @@ cask 'microsoft-office'
 cask 'paste'
 cask 'qlmarkdown'
 cask 'qlstephen'
-cask 'scapple',
-cask 'scrivener',
+cask 'scapple'
+cask 'scrivener'
 cask 'visual-studio-code'
 cask 'vlc'
 mas '', id: 1295203466 # Microsoft Remote Desktop 10
