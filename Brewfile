@@ -9,6 +9,7 @@ brew 'mas'
 brew 'openssl'
 brew 'pygments'
 brew 'python'
+brew 'rsync'
 brew 'sqlite'
 # brew 'sudo-touchid' # needs tested on a touchid mac
 brew 'terminal-notifier'
