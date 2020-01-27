@@ -10,36 +10,38 @@ Bootstrapping
 
 The intent of this repo is to bring a new macOS account to a 'standard' state. It's entirley suited to my personal preference<sup>[1](#fn1)</sup>. Effectively, it's a barebones bootstrapping system for machines that aren't part of a larger configuration management infrastructure.
 
-1. Ensure you have git available.
+macOS doesn't come with any git available 'out of the box'; while I'd love to have everything available after a single `git clone $FOO && cd $FOO && ./install` one does need to take some preparatory steps.
+
+1. Ensure you have the Xcode Command Line Tools installed; this is a requirement for Homebrew and grants a basic version of git (which the Brewfile will then update).
 
     ```sh
     xcode-select --install
     ```
 
-2. Install [Homebrew][2] --- sensible installation requires reading the installation script to make sure it's not been tampered with, rather than just executing an arbitrary ruby script pulled via `curl`. Even non-sensible installation requires `sudo`; as such I'd much rather this happen as a separate step.
+2. Install [Homebrew][2] --- sensible installation requires reading the installation script to make sure it's not been tampered with, rather than just executing an arbitrary ruby script pulled via `curl`. Even non-sensible installation requires command-line interaction; as such I'd much rather this happen as a separate step.
 
-2. Clone this repo
+3. Clone this repo
 
     ```sh
     git clone --recursive https://github.com/digitalraven/dotfiles
     ```
 
-3. Sign in to the App Store; `mas` is flaky on Catalina, and doesn't work with command-line signin. Signing in via the app is a workaround that makes it kinda-work-ish. Sometimes.
+4. Sign in to the App Store; `mas` is flaky on Catalina, and command-line signin is completely broken. Signing in via the app is a workaround that makes it kinda-work-ish. Sometimes. If the moon's in the right phase and the chicken entrails show fortune in your future.
 
-3. Install
+5. Install
 
     ```sh
     cd dotfiles && ./install
     ```
 
-4. Go for any or all of a cigarette, a gin and tonic, or a hot beverage of your choice. The brewfile pulls down a lot of casks, so you might as well do something useful with your time.
+6. Go for any or all of a cigarette, a gin and tonic, or a hot beverage of your choice. The brewfile pulls down a lot of casks, so you might as well do something useful with your time.
 
 Included Configuration
 ----------------------
 
 * Commands, packages, and software from the App Store are managed using [Homebrew][2]. This is all controlled using a `brewfile`, a list of packages to install. Read that file to find out what's being installed.
 * `vim` configuration and plugins are installed directly, and managed via [Pathogen][3].
-* Standard git configuration and system wide ignore come from `gitconfig` and `gitignore`.
+* Standard git configuration comes from `gitconfig` and `gitignore`.
 * Shell customisation is done via [`oh-my-zsh`][4], with a custom set of aliases and functions. Most plugins are in the `brewfile`, but `zsh-apple-touchbar` is brought down in the `pre-install.sh` as it uses a feature branch not included in the main repo.
 * Python modules not in homebrew are installed using [Dotbot-Pip][1], from a list in `packages.pip`
 

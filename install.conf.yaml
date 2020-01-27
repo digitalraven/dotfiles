@@ -9,8 +9,7 @@
 
 - shell:
     - brew bundle
-    - sh pre-install.sh
-    - sh macos
+    - sh post-brew.sh
 
 - pip:
     file: packages.pip
