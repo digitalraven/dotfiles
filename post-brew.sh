@@ -4,8 +4,11 @@ echo 'Installing oh-my-zsh'
 /bin/sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
 mkdir -p ~/.oh-my-zsh/custom/themes
 
-echo 'Installing zsh-apple-touchbar'
-git clone https://github.com/vegerot/zsh-apple-touchbar.git -b autoGenerate $ZSH_CUSTOM/plugins/zsh-apple-touchbar
+echo 'Installing zsh plugins'
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/vegerot/zsh-apple-touchbar.git -b autoGenerate ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-apple-touchbar
+git clone https://github.com/digitalraven/omz-homebrew ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/omz-homebrew
 
 echo 'Fixing Quicklook plugins'
 xattr -d -r com.apple.quarantine ~/Library/Quicklook/*

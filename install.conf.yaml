@@ -30,6 +30,5 @@
     ~/.oh-my-zsh/custom/themes/digitalraven.zsh-theme:
         path: digitalraven.zsh-theme
     ~/.oh-my-zsh/custom/plugins/zsh-apple-touchbar/config.yml:
-        force: true
         path: touchbar-config.yaml
 
