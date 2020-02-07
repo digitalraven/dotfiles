@@ -49,7 +49,7 @@ plugins=(git osx zsh-autosuggestions zsh-apple-touchbar zsh-syntax-highlighting 
 
 # User configuration
 
-export PATH=/usr/local/opt/python/libexec/bin:/bin:/sbin:/usr/local/bin:/usr/local/etc:/usr/bin:/usr/sbin:/usr/etc:/usr/local/share/bin:/usr/local/share/etc:
+export PATH=/usr/local/opt/binutils/bin:/usr/local/opt/python/libexec/bin:/bin:/sbin:/usr/local/bin:/usr/local/etc:/usr/bin:/usr/sbin:/usr/etc:/usr/local/share/bin:/usr/local/share/etc:
 
 if [[ -n "$VIRTUAL_ENV" ]]; then
   export PATH="$VIRTUAL_ENV/bin:$PATH"
@@ -81,6 +81,15 @@ alias lr="ll -rt"
 alias gsvl='git svn rebase'
 alias gsvp='git svn dcommit'
 alias gdt='git difftool'
+
+# GNU command aliases; installed as g$CMD by homebrew to avoid 
+# conflicts, but aliased here to the 'correct' name.
+# Makes more sense to me to do this than to add to $PATH for every
+# command
+alias grep='ggrep'
+alias sed='gsed'
+alias find='gfind'
+alias xargs='gxargs'
 
 # 'Regular' command aliases
 alias ffs='sudo $(fc -ln -1)'
