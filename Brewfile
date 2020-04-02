@@ -37,8 +37,6 @@ cask 'keybase'
 cask 'lastpass'
 cask 'macdown'
 cask 'microsoft-office'
-# cask 'microsoft-remote-desktop-beta' # Better to use the MAS version if possible.
-cask 'paste'
 cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'qlstephen'
@@ -52,3 +50,5 @@ mas '', id: 1435957248 # Drafts 5
 mas '', id: 823766827  # OneDrive
 mas '', id: 1397180934 # Dark Mode for Safari
 mas '', id: 1482490089 # Tampermonkey for Safari
+mas '', id: 967805235  # Paste Clipboard Manager
+mas '', id: 1480068668 # Messenger
