@@ -40,7 +40,7 @@ myprompt() {
 
   # Indicate last command status with colour and a simple unicode indicator
   if [[ $EXIT != 0 ]]; then
-    PS1+="%{$fg_bold[red]%}✘ "
+    PS1+="%{$fg_bold[red]%}✘ $EXIT "
   else
     PS1+="%{$fg[cyan]%}✔ "
   fi
