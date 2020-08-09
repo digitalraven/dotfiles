@@ -49,7 +49,7 @@ plugins=(git osx zsh-autosuggestions zsh-apple-touchbar zsh-syntax-highlighting 
 
 # User configuration
 
-export PATH=/usr/local/opt/binutils/bin:/usr/local/opt/python/libexec/bin:/bin:/sbin:/usr/local/bin:/usr/local/etc:/usr/bin:/usr/sbin:/usr/etc:/usr/local/share/bin:/usr/local/share/etc:
+export PATH=/usr/local/opt/binutils/bin:/usr/local/opt/python/libexec/bin:/bin:/sbin:/usr/local/bin:/usr/local/etc:/usr/bin:/usr/sbin:/usr/etc:/usr/local/share/bin:/usr/local/share/etc:~/bin
 
 if [[ -n "$VIRTUAL_ENV" ]]; then
   export PATH="$VIRTUAL_ENV/bin:$PATH"

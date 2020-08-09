@@ -18,6 +18,7 @@
     stderr: true
 
 - link:
+    ~/bin: bin
     ~/.gitconfig: gitconfig
     ~/.gitignore: gitignore
     ~/.vim: vim/
