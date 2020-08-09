@@ -1,0 +1,5 @@
+#! /bin/bash
+
+~/bin/missinglinks.py
+
+git add broken_links.md
