@@ -40,7 +40,7 @@ def main():
     if broken_links:
         with open('broken_links.md','w') as f:
             for link in broken_links:
-                f.write('[[{}]]\n'.format(link))
+                f.write('* [[{}]]\n'.format(link))
     # Should have an 'else delete' here I guess but if 
     # I ever have a vault with no more links to make
     # then I'm clearly high as goosedick on something
