@@ -32,5 +32,18 @@ def find_broken_links() -> []:
 if __name__ == "__main__":
     broken_links = find_broken_links()
     if broken_links:
+<<<<<<< HEAD
         with open('broken_links.md', 'w') as f:
             f.write(str.join('\n', ["* " + l for l in broken_links]))
+=======
+        with open('broken_links.md','w') as f:
+            for link in broken_links:
+                f.write('* [[{}]]\n'.format(link))
+    # Should have an 'else delete' here I guess but if 
+    # I ever have a vault with no more links to make
+    # then I'm clearly high as goosedick on something
+
+if __name__ == '__main__':
+    # TODO: Add some error checking maybe
+    main()
+>>>>>>> 869fd5bc534933d2025a79397a4e1627b6b5f66e
